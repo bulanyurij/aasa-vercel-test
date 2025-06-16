@@ -4,7 +4,7 @@
     "details": [
       {
         "appID": "C669R9JK4D.ua.gov.bezmezh.dev",
-        "paths": ["/auth*"]
+        "paths": ["/auth/*"]
       }
     ]
   }
