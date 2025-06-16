@@ -43,11 +43,11 @@
     const currentOrigin = window.location.origin;
 
     authButton.addEventListener('click', function() {
-      window.location.href = `${currentOrigin}/auth?token=test_token_123`;
+      window.location.href = `${currentOrigin}/auth.html?token=test_token_123`;
     });
 
     errorButton.addEventListener('click', function() {
-      window.location.href = `${currentOrigin}/auth`;
+      window.location.href = `${currentOrigin}/auth.html`;
     });
   });
 </script>
