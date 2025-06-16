@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "ua.gov.bezmezh",
+    "sha256_cert_fingerprints":
+    ["D0:BF:77:63:5B:DD:88:AA:C4:A6:30:F7:91:A5:5E:2E:90:6F:50:46:90:1A:BE:61:E2:14:61:7C:FB:09:EB:CD"]
+  }
+}]
