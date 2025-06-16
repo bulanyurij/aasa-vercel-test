@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "Z439WLV4CZ.ua.gov.bezmezh.dev",
+        "paths": ["/auth*"]
+      }
+    ]
+  }
+}
