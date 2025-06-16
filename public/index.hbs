@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{seo.title}}</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      color: white;
+    }
+    #auth-button {
+      background-color: #28a745;
+    }
+    #error-button {
+      background-color: #dc3545;
+    }
+  </style>
+</head>
+<body>
+  <h1>Authentication Test</h1>
+  <button id="auth-button">Authorize (Success)</button>
+  <button id="error-button">Authorize (Error)</button>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const authButton = document.getElementById('auth-button');
+    const errorButton = document.getElementById('error-button');
+    const currentOrigin = window.location.origin;
+
+    authButton.addEventListener('click', function() {
+      window.location.href = `${currentOrigin}/auth?token=test_token_123`;
+    });
+
+    errorButton.addEventListener('click', function() {
+      window.location.href = `${currentOrigin}/auth`;
+    });
+  });
+</script>
+</body>
+</html>
